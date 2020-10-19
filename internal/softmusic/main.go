@@ -1,6 +1,6 @@
 package softmusic
 
-import "github.com/hultan/softmusic/internal/softmusic/internal/mp3"
+import "github.com/hultan/softmusic/pkg/mp3"
 
 type SoftMusic struct {
 
