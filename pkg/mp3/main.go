@@ -8,15 +8,15 @@ import (
 	"os"
 )
 
-type SoftMusicMP3 struct {
+type MP3 struct {
 
 }
 
-func NewSoftMusicMP3() *SoftMusicMP3 {
-	return new(SoftMusicMP3)
+func NewMP3() *MP3 {
+	return new(MP3)
 }
 
-func (s *SoftMusicMP3) PlayMP3() error {
+func (s *MP3) PlayMP3() error {
 	f, err := os.Open("/home/per/code/softmusic/assets/2cellos.mp3")
 	if err != nil {
 		return err

@@ -11,6 +11,6 @@ func NewSoftMusic() *SoftMusic {
 }
 
 func (s *SoftMusic) Play() {
-	player := mp3.NewSoftMusicMP3()
+	player := mp3.NewMP3()
 	player.PlayMP3()
 }
