@@ -1,19 +1,19 @@
 package main
 
 import (
-	mp3 "github.com/hultan/softmusic/internal/mp3"
+	"github.com/hultan/softmusic/internal/softmusic"
 	"log"
 )
 
-func runMP3() error {
-	player := mp3.NewSoftMusicMP3()
-	player.PlayMP3()
+func runSoftMusic() error {
+	player := softmusic.NewSoftMusic()
+	player.Play()
 
 	return nil
 }
 
 func main() {
-	if err := runMP3(); err != nil {
+	if err := runSoftMusic(); err != nil {
 		log.Fatal(err)
 	}
 }
